@@ -1,9 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="PlayerViewController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="QueueStream.cs">
     <Files>
       <File FileName="QueueStream.cs" Line="1" Column="1" />
-      <File FileName="PlayerViewController.cs" Line="1" Column="1" />
       <File FileName="StreamingPlayback.cs" Line="1" Column="1" />
       <File FileName="Main.cs" Line="1" Column="1" />
       <File FileName="MainViewController.cs" Line="1" Column="1" />

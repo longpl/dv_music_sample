@@ -20,8 +20,6 @@ namespace BackgroundStreamingAudio
             var play = FindViewById<Button>(Resource.Id.playButton);
             var pause = FindViewById<Button>(Resource.Id.pauseButton);
             var stop = FindViewById<Button>(Resource.Id.stopButton);
-			var text = FindViewById<EditText>(Resource.Id.editText1);
-			StreamingBackgroundService.Mp3 = text.Text;
             play.Click += (sender, args) => SendAudioCommand(StreamingBackgroundService.ActionPlay);
             pause.Click += (sender, args) => SendAudioCommand(StreamingBackgroundService.ActionPause);
             stop.Click += (sender, args) => SendAudioCommand(StreamingBackgroundService.ActionStop);
@@ -30,6 +28,8 @@ namespace BackgroundStreamingAudio
 
         private void SendAudioCommand(string action)
         {
+			var text = FindViewById<EditText>(Resource.Id.editText1);
+			StreamingBackgroundService.Mp3 = text.Text;
             var intent = new Intent(action);
             StartService(intent);
         }
